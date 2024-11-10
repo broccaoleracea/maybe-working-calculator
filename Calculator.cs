@@ -45,8 +45,14 @@ namespace calc_app
         {
             int val1 = (int)numParam1.Value;
             int val2 = (int)numParam2.Value;
+            if (val2 == 0) {
+                MessageBox.Show("Diving by zero is not allowed.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
             int result = val1 / val2;
             lblResult.Text = result.ToString();
+            }
         }
 
         private void btnTimes_Click(object sender, EventArgs e)
