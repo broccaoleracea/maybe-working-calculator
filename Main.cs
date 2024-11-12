@@ -23,5 +23,12 @@ namespace calc_app
         {
             this.Close();
         }
+
+        private void btnStartLuas_Click(object sender, EventArgs e)
+        {
+            CalcLuas calcLuas= new CalcLuas(this);
+            calcLuas.Show();
+            this.Hide();
+        }
     }
 }

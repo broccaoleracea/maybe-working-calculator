@@ -32,6 +32,7 @@
             label1 = new Label();
             btnStart = new Button();
             btnQuit = new Button();
+            btnStartLuas = new Button();
             SuspendLayout();
             // 
             // label1
@@ -56,7 +57,7 @@
             // 
             // btnQuit
             // 
-            btnQuit.Location = new Point(12, 96);
+            btnQuit.Location = new Point(12, 142);
             btnQuit.Name = "btnQuit";
             btnQuit.Size = new Size(451, 40);
             btnQuit.TabIndex = 2;
@@ -64,11 +65,22 @@
             btnQuit.UseVisualStyleBackColor = true;
             btnQuit.Click += btnQuit_Click;
             // 
+            // btnStartLuas
+            // 
+            btnStartLuas.Location = new Point(12, 96);
+            btnStartLuas.Name = "btnStartLuas";
+            btnStartLuas.Size = new Size(451, 40);
+            btnStartLuas.TabIndex = 3;
+            btnStartLuas.Text = "Hitung Luas";
+            btnStartLuas.UseVisualStyleBackColor = true;
+            btnStartLuas.Click += btnStartLuas_Click;
+            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(475, 148);
+            ClientSize = new Size(475, 191);
+            Controls.Add(btnStartLuas);
             Controls.Add(btnQuit);
             Controls.Add(btnStart);
             Controls.Add(label1);
@@ -88,5 +100,6 @@
         private Label label1;
         private Button btnStart;
         private Button btnQuit;
+        private Button btnStartLuas;
     }
 }
